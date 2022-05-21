@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dancingscript/v23/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 300, 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cormorantgaramond/v15/co3YmX5slCNuHLi8bLeY9MK7whWMhyjQAllfvg-I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400, 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.5;
+    color: #5A5A5A;
+}
+
+h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 6.25rem;
+    color: #d2b48c;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1439px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+h2 {
+    font-size: 2.625rem;
+}
+
+h3 {
+    font-size: 1.875rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+
+header {
+    text-align: center;
+    padding: 5% 2%;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    display: none;
+}
+
+.header-content{
+    position: relative;
+    z-index: 9;
+}
+
+.photos-header img {
+    width: 20%;
+    margin: 1.5%;
+}
+
+.photos-header .header-image-1, .photos-header .header-image-2{
+    margin-bottom: 8%;
+}
+
+nav ul {
+    padding: 0;
+}
+
+header nav ul{
+    margin: 6rem auto;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+nav li a {
+    color: #000;
+    font-size: 1.375rem;
+}
+
+@media only screen and (max-width: 1020px) {
+    .photos-header{
+        display: none;
+    }
+
+    header nav li a{
+        color: #fff;
+    }
+
+    header{
+        background-image: url("file:///C:/Users/irbro/Desktop/Projects/Responsive-Club-Website/resources/images/image-2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .overlay{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        padding: 0;
+        margin: 0 auto 2rem auto;
+    }
+
+    header nav li a{
+        font-size: 1.5rem;
+    }
+}
+
+/* WELCOME SECTION */
+
+#welcome {
+    padding: 4rem 0;
+    background-color: #d2b48c;
+    text-align: center;
+}
+
+.gallery-title {
+    text-transform: uppercase;
+}
+
+.welcome-image {
+    width: 15%;
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+.welcome-text-content {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.welcome-text-content h3 {
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1439px) {
+    .welcome-image {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .welcome-image {
+        float: none;
+        margin: 0;
+    }
+
+    .welcome-image,
+    .welcome-text-content {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* FEATURED SECTION */
+
+#feature {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+
+.feature-item {
+    width: 20%;
+    display: inline-block;
+    margin: 6rem;
+}
+
+.icon {
+    width: 30%;
+    background-color: #5A5A5A;
+    border-radius: 50%;
+}
+
+.feature-item p {
+    font-size: 1.125rem;
+    margin: 10% auto;
+}
+
+.button {
+    background-color: #5A5A5A;
+    padding: 1rem 1.5rem;
+    width: 25%;
+    border-radius: 5%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1590px) {
+    .button {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+
+    .feature-item,
+    .icon {
+        width: 30%;
+        ;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .feature-item,
+    .icon {
+        width: 40%;
+        ;
+    }
+
+    .feature-item h4 {
+        font-size: 2rem;
+    }
+
+    .feature-item p {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .icon {
+        width: 45;
+    }
+
+    .feature-item {
+        width: 60%;
+    }
+}
+
+.feature-item:hover>.icon,
+.feature-item:hover>.button {
+    background-color: #d2b48c;
+}
+
+.feature-item:hover>h4 {
+    color: #d2b48c;
+}
+
+/* IMAGE GALLERY */
+
+#image-gallery {
+    background-color: #d2b48c;
+    color: #fff;
+    text-align: center;
+    padding: 2% 5%;
+}
+
+.photos img {
+    width: 30%;
+    margin: 1.5%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .photos img {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .photos img {
+        width: 80%;
+    }
+}
+
+/* CTA SECTION */
+
+#cta {
+    text-align: center;
+    color: #d2b48c;
+    font-family: 'Ubuntu', serif;
+    margin: 6rem auto;
+    padding: 0 5%;
+}
+
+#cta h2,
+h3 {
+    font-weight: 400;
+}
+
+/* FOOTER SECTION */
+
+.footer-content {
+    margin-top: 4rem;
+    padding: 0 5%;
+}
+
+.footer-content h5,
+nav {
+    display: inline-block;
+}
+
+.author {
+    width: 26%;
+    text-align: left;
+}
+
+.footer-content nav {
+    width: 50%;
+    text-align: center;
+}
+
+.copyright {
+    width: 20%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1222px) {
+
+    .author,
+    .footer-content nav,
+    .copyright {
+        width: 100%;
+    }
+
+    .author,
+    .copyright {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .author,
+    .copyright {
+        font-size: 1.25rem;
+    }
+}
