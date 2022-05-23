@@ -277,7 +277,7 @@ nav li a {
     }
 
     .feature-item {
-        width: 60%;
+        width: 55%;
     }
 }
 
@@ -336,6 +336,7 @@ h3 {
 .footer-content {
     margin-top: 4rem;
     padding: 0 5%;
+    border-top: 0.063rem solid #5A5A5A;
 }
 
 .footer-content h5,
