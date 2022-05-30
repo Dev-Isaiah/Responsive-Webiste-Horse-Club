@@ -279,6 +279,10 @@ nav li a {
     .feature-item {
         width: 50%;
     }
+    
+    .button{
+        font-size: 0.75rem;
+    }
 }
 
 .feature-item:hover>.icon,
