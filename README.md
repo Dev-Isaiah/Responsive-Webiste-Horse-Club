@@ -13,4 +13,4 @@ This was a project from Codecademy that had requirements that I had to follow in
  - [x] CSS
 
 ## Completed Project Link:
-[https://devart1st.github.io/Responsive-Webiste-Horse-Club/](https://devart1st.github.io/Responsive-Webiste-Horse-Club/)
+https://dev-isaiah.github.io/Responsive-Webiste-Horse-Club/
